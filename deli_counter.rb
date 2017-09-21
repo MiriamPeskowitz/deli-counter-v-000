@@ -2,10 +2,12 @@ def line(katz_deli_line)
     if katz_deli_line.empty?
         puts "The line is currently empty."
     else
-      line_right_now = katz_deli_line.each_with_index(1).map do|name, index|
+      
+      katz_deli_line.each_with_index(1).map do|name, index|
+        line_right_now << #{index}. #{name}
         
-          puts "The line is currently: #{index}. #{name}"
         end
+      puts "The line is currently: #{line_right_now}"
     end
 end
 
