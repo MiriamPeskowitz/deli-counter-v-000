@@ -10,7 +10,7 @@ def line(katz_deli_line)
 end
 
 def take_a_number(katz_deli_line, wants_to_join)
-    katz_deli_line<< wants_to_join
+    katz_deli_line.push(wants_to_join)
     "Welcome, #{wants_to_join}. You are number #{katz_deli_line.length} in line."
 end
 
