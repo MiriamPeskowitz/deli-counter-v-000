@@ -11,7 +11,7 @@ end
 
 def take_a_number(katz_deli_line, wants_to_join)
     katz_deli_line<< wants_to_join
-    "Welcome, #{wants_to_join}. You are number #{katz_deli_line[-1]} in line."
+    "Welcome, #{wants_to_join}. You are number #{katz_deli_line.length} in line."
 end
 
 def now_serving(katz_deli_line)
