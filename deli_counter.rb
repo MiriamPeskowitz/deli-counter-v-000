@@ -15,7 +15,7 @@ def take_a_number(katz_deli_line, wants_to_join)
 end
 
 def now_serving(katz_deli_line)
-  if katz_deli_line.length = 0
+  if katz_deli_line.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli_line[0]}"
