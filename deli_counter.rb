@@ -4,7 +4,7 @@ def line(katz_deli_line)
     else
       line_right_now = "The line is currently: "
       katz_deli_line.each_with_index.map do |person, index|
-        line_right_now << "#{index + 1}. #{person} "
+        line_right_now << " #{index + 1}. #{person}"
       end
       puts line_right_now
     end
