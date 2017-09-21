@@ -2,11 +2,12 @@ def line(katz_deli_line)
     if katz_deli_line.empty?
         puts "The line is currently empty."
     else
+      line_right_now = "The line is currently:"
       katz_deli_line.each_with_index.map do |person, index|
-        #line_right_now << "#{index + 1}. #{person}"
-        end
-      puts "The line is currently: #{katz_deli_line}}"
-     end
+        line_right_now << "#{index + 1}. #{person}"
+      end
+      puts line_right_now
+    end
 end
 
 def take_a_number(katz_deli_line, wants_to_join)
